@@ -15,13 +15,13 @@ console.log(item_2);
 //  7. Создать переменную “item_3”
 let item_3
 //  8. Присвоить переменной item_3 сложение item_1 и item_2.
-let item_3 = item_1 + item_2;
+item_3 = item_1 + item_2;
 //  9. Вывести в консоль item_3.
 console.log(item_3);
 //  10. Создать переменную “item_4”
 let item_4;
 //  11. Присвоить переменной item_4 строку “Yolochka”
-let item_4 = "Yolochka";
+item_4 = "Yolochka";
 //  12. Вывести в консоль item_4.
 console.log(item_4);
 //  13. Вывести в консоль сложение item_3 и item_4.
@@ -31,15 +31,15 @@ console.log(item_3 * item_4);
 //  15. Создать переменную “item_5”
 let item_5
 //  16. Присвоить переменной item_5 переменную item_3
-let item_5 = item_3;
+item_5 = item_3;
 //  17. Создать переменную item_6.
-let item_6
+let item_6;
 //  18. Создать переменную item_6_type
-let item_6_type
+let item_6_type;
 //  19. Присвоить переменной item_6 значение 15
-let item_6 = 15;
+item_6 = 15;
 //  20. Присвоить переменной item_6_type тип переменной item_6
-let item_6_type = typeof item_6;
+item_6_type = typeof item_6;
 //  21. Вывести в консоль тип данных item_6 в виде ——  “item_6 == ”  item_6,  “item_6_type == ”  item_6_type ——
 console.log("item_6 == " + item_6 + " item_6_type == " + typeof item_6)
 //  22. Создать переменную item_7 и в ней преобразовать item_6 в String.
@@ -48,7 +48,7 @@ console.log(item_7);
 //  23. Создать переменную item_7_type
 let item_7_type
 //  24. Присвоить переменной item_7_type тип переменной item_7
-let item_7_type = typeof item_7;
+item_7_type = typeof item_7;
 //  25. Вывести в консоль тип данных item_7 в виде ——  “item_7 == ”  item_7,  “item_7_type == ”  item_7_type ——
 console.log("item_7 == " + item_7 + " item_7_type == " + item_7_type);
 //  26. Создать переменную “age_1” и присвоить ей значение 10
@@ -105,7 +105,7 @@ else {
 
 checkAge (17)
 checkAge (18)
-checkAge (36)
+checkAge (61)
 //------------------------------------------------------------------
 
 // 2*:
@@ -130,9 +130,10 @@ const checkAge_1 = function(age) {
         }
     }
 else {
-    console.log('Error\' r')}
+    console.log('Error')}
 }
 
+checkAge_1 (17)
 checkAge_1 (47)
 checkAge_1 ("qwerty123")
 
@@ -141,12 +142,9 @@ checkAge_1 ("qwerty123")
 // let age = 10, age_2 = 18, age_3 = 60;
 
 const checkAge_2 = function(age) {
-    // age = Number(age)
-
+   
     console.log(age)
 
-    // if(!isNaN (age) ) {
-            // if(Number(age) ) {
                 if(+age){
 
         if(age < age_2) {
@@ -179,8 +177,6 @@ const checkAge_3 = function(age) {
 
     console.log(age)
 
-    // if(!isNaN (age) ) {
-            // if(Number(age) ) {
                 if(+age){
 
         if(age < age_2) {
@@ -200,9 +196,10 @@ else {
     console.log('Error')}
 }
 
-checkAge ( -17 )
-// // checkAge("66")
-// // checkAge("zaq1")
-
 let agePromt = prompt('Enter age');
 checkAge_3(agePromt);
+
+checkAge_3 (-13)
+checkAge_3 ("66")
+checkAge_3 ("zaq1")
+
