@@ -9,7 +9,7 @@ console.log(item_1);
 //  4. Создать переменную “item_2”
 let item_2;
 //  5. Присвоить переменной item_2 цифру 3.
-let item_2 = 3;
+item_2 = 3;
 //  6. Вывести в консоль item_2.
 console.log(item_2);
 //  7. Создать переменную “item_3”
