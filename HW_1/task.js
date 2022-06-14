@@ -41,7 +41,6 @@ let item_6 = 15;
 //  20. Присвоить переменной item_6_type тип переменной item_6
 let item_6_type = typeof item_6;
 //  21. Вывести в консоль тип данных item_6 в виде ——  “item_6 == ”  item_6,  “item_6_type == ”  item_6_type ——
-console.log("item_6 == " + item_6 + " item_6_type == " + item_6_type);
 console.log("item_6 == " + item_6 + " item_6_type == " + typeof item_6)
 //  22. Создать переменную item_7 и в ней преобразовать item_6 в String.
 let item_7 = String(item_6);
@@ -51,15 +50,7 @@ let item_7_type
 //  24. Присвоить переменной item_7_type тип переменной item_7
 let item_7_type = typeof item_7;
 //  25. Вывести в консоль тип данных item_7 в виде ——  “item_7 == ”  item_7,  “item_7_type == ”  item_7_type ——
-console.log("item_7 == " + typeof item_7 + " item_7_type == " + typeof item_7_type);
 console.log("item_7 == " + item_7 + " item_7_type == " + item_7_type);
-
-// =====================ЕЩЁ ВАРИАНТ========================
-let item_71 = typeof(item_6 = "stryng"); 
-console.log(item_71);
-let item_71_type = typeof(item_71);
-console.log("item_71 == " + item_71 + " item_71_type == " + item_71_type);
-
 //  26. Создать переменную “age_1” и присвоить ей значение 10
 let age_1 = 10
 //  27. Создать переменную “age_2” и присвоить ей значение 18
@@ -142,8 +133,8 @@ else {
     console.log('Error\' r')}
 }
 
-checkAge_1 (33)
-checkAge_1 ("17ff")
+checkAge_1 (47)
+checkAge_1 ("qwerty123")
 
 // 3**:
 // Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
@@ -175,9 +166,9 @@ else {
     console.log('Error')}
 }
 
-checkAge_2 ( -17 )
+checkAge_2 ( -50 )
 checkAge_2("61")
-checkAge_2("48fff")
+checkAge_2("1qaz")
 
 // 4***:
 // Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
@@ -210,8 +201,8 @@ else {
 }
 
 checkAge ( -17 )
-// // checkAge("61")
-// // checkAge("48fff")
+// // checkAge("66")
+// // checkAge("zaq1")
 
 let agePromt = prompt('Enter age');
 checkAge_3(agePromt);
