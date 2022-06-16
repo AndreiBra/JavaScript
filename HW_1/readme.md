@@ -58,4 +58,4 @@ HW_1
 
 ___
 
-# Видео зарисовка решения этих задач можно посмотреть [здесь](https://youtu.be/Sf-CDgpRim8), в формате js [here](https://github.com/AndreiBra/JavaScript/blob/main/HW_1/task.js), файл html для запуска скрипта [здесь](https://github.com/AndreiBra/JavaScript/blob/main/HW_1/HW_1.html)
+# Видео по решению этих задач можно посмотреть [здесь](https://youtu.be/Sf-CDgpRim8), в формате js [here](https://github.com/AndreiBra/JavaScript/blob/main/HW_1/task.js), файл html для запуска скрипта [здесь](https://github.com/AndreiBra/JavaScript/blob/main/HW_1/HW_1.html)
