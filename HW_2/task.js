@@ -19,7 +19,17 @@ while (count<exp) {
 }
 console.log(result)
 
+// Variant С
 
+function power(base,exp){
+    var result = 1;
+    for(var cnt = 0; cnt < exp; cnt++){
+    result *= base };
+    return result;
+    
+    }
+    
+    console.log( power(2,10));
 
 
 // 1*. Преобразовать 1 задачу в функцию, принимающую на вход степень, в которую будет возводиться число 2
