@@ -2,8 +2,8 @@
 
 // variant A
 
-var result = 1;
-var counter = 0;
+let result = 1;
+let counter = 0;
 while (counter < 10) {
   result = result * 2;
   counter = counter + 1;
@@ -22,8 +22,8 @@ console.log(result)
 // Variant С
 
 function power(base,exp){
-    var result = 1;
-    for(var cnt = 0; cnt < exp; cnt++){
+    let result = 1;
+    for(let cnt = 0; cnt < exp; cnt++){
     result *= base };
     return result;
     
