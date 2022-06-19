@@ -117,7 +117,7 @@ function printSmile(stroka, numberOfRows) {
     console.log(r1+=stroka)
     }
 }
-printSmile('(-:-)',6)
+printSmile(':)',6)
 
 // Variant С
 
