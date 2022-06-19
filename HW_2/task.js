@@ -52,3 +52,17 @@ cnt++;
 // 4**. Написать функцию, которая проверяет, является ли слово палиндромом e.g. function isPalindrom(word)
 
 // Проверки: 'abba', 'Abba'
+
+const str1 = 'abba'
+function isPalindrom (word) {
+    word = word.toLowerCase()
+
+    let objPalindrom = word.split("").reverse().join("");   
+    if(word == objPalindrom) {
+        return 'Слово является палиндромом'
+    } else {
+        return 'Слово не палиндромом'
+    }
+}
+let result = isPalindrom(str1)
+console.log(result)
