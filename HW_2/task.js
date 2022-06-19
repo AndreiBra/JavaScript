@@ -61,7 +61,7 @@ function isPalindrom (word) {
     if(word == objPalindrom) {
         return 'Слово является палиндромом'
     } else {
-        return 'Слово не палиндромом'
+        return 'Слово не является палиндромом'
     }
 }
 let result = isPalindrom(str1)
