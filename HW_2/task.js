@@ -45,9 +45,47 @@ cnt++;
 
 // 2*. Преобразовать 2 задачу в функцию, принимающую на вход строку, которая и будет выводиться в консоль (как в условии смайлик), а также количество строк для вывода e.g. function printSmile(stroka, numberOfRows)
 
+    let stroka = ":)"
+    let numberOfRows = 10
+    function printSmile(stroka, numberOfRows) {
+        let strSmile = stroka
+        for(let i = 1; i <= numberOfRows; i++) {
+            console.log(strSmile)
+            strSmile = strSmile + stroka
+        }
+    }
+    printSmile(stroka, numberOfRows)
+
 // 3**. Написать функцию, которая принимает на вход слово. Задача функции посчитать и вывести в консоль, сколько в слове гласных, и сколько согласных букв. e.g. function getWordStructure(word) В консоли: Слово (word) состоит из (число) гласных и (число) согласных букв
 
 // Проверки: 'case', 'Case', 'Check-list'
+
+ const valString = 'case'
+    const valString1 = 'Case'
+//     const valString2 = 'Check-list' не проходит проверку не видит list
+
+    function getWordStructure (wodr) {
+        const count = {                     
+            glasnye : 0,
+            soglasnie : 0
+        }
+        wodr = wodr.toLowerCase()           //для более простого сканирования, переводим все слово в нижний регистр
+        for (let i = 0; i < wodr.length; i++) {      // цикл перебирает строку по буквам
+            if(wodr[i].match(/[aeiouAEIOU]/)) {                  
+                count.glasnye = count.glasnye + 1
+            } else if (wodr[i].match(/[bcdfghjklmnpqrtsvwxyzBCDFGHJKLMNPQRTSVWXYZ]/)) {
+                count.soglasnie = count.soglasnie + 1
+            }
+        }
+        return count    //функция возвращает обьект
+    }
+    const count = getWordStructure(valString2)  // результат функции присваиваем в объект
+
+    console.log('Слово ' + valString + ' состоит из ' + count.glasnye + ' гласных и ' + count.soglasnie + ' согласных букв')
+    console.log('Слово ' + valString1 + ' состоит из ' + count.glasnye + ' гласных и ' + count.soglasnie + ' согласных букв')
+    console.log('Слово ' + valString2 + ' состоит из ' + count.glasnye + ' гласных и ' + count.soglasnie + ' согласных букв')
+
+
 
 // 4**. Написать функцию, которая проверяет, является ли слово палиндромом e.g. function isPalindrom(word)
 
