@@ -65,6 +65,19 @@ const exponenta4 = function(p_1, i) {
    }
    exponenta4(2, 10)
 
+// Variant D
+
+function exponentiate (ext) {
+    let val = 1
+    const number = 2
+    for(let i = 1; i <= ext; i++) {
+       val = val * number;
+       console.log(number + ' в степени ' + i + ' равно ' + val)
+    }
+}
+exponentiate(10)
+    
+
 // 2.Написать скрипт, который выведет 5 строк в консоль таким образом, чтобы в первой строчке выводилось :), во второй :):) и так далее Пример в консоли: :) :):) :):):) :):):):) :):):):):)
 
 // Variant A
