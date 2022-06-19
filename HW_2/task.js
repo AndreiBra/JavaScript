@@ -93,8 +93,7 @@ cnt++;
 
 const str1 = 'abba'
 function isPalindrom (word) {
-    word = word.toLowerCase()
-
+  
     let objPalindrom = word.split("").reverse().join("");   
     if(word == objPalindrom) {
         return 'Слово является палиндромом'
