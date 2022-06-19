@@ -165,16 +165,18 @@ function getWordStructure(word){
 
     let vowelsArray = ['a','e','i','o','u','y']
     let consonantsArray = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z']
-    let tempArray = word.toLowerCase().split('') /*toLowerCase приводит строку в нижний регистр. split разделяет строку в массив, пустые кавычки разделяет
-    строку на отдельные элементы, т. е. букыв*/
+    let tempArray = word.toLowerCase().split('')
+    // toLowerCase приводит строку в нижний регистр. split разделяет строку в массив, пустые кавычки разделяют строку на отдельные элементы (буквы)
     let vowelsSum = tempArray.filter(x => vowelsArray.includes(x)).length;
-    /*Метод filter() создаёт новый массив с элементами прошедшими проверку
-    Свойство length позволяет узнать длину строки*/ 
+    // Метод filter() создаёт новый массив с элементами прошедшими проверку. св-во length позволяет узнать длину строки. 
     let consonantsSum = tempArray.filter(x => consonantsArray.includes(x)).length;
     console.log(`Слово ${word} содержит гласных букв: `+vowelsSum+" и согласных букв: "+consonantsSum) 
-    console.log(tempArray) // выведет введеное слово в виде массива
-    let tempArray2 = tempArray.join(''); // метод join наоборот сливает массив в строку
-    console.log(tempArray2) // выводит наше слово строкой, но внижнем регистре    
+    console.log(tempArray)
+    // выведет введеное слово в виде массива
+    let tempArray2 = tempArray.join('');
+    // метод join объединяет массив в строку
+    console.log(tempArray2)
+    // выводит слово строкой, в нижнем регистре    
 }
 
 getWordStructure('case')
@@ -185,7 +187,8 @@ getWordStructure('Check-list')
 
 // Проверки: 'abba', 'Abba'
 
-const str1 = 'abba'
+const str = 'abba'
+// const str = 'Abba'
 function isPalindrom (word) {
   
     let objPalindrom = word.split("").reverse().join("");   
@@ -195,5 +198,5 @@ function isPalindrom (word) {
         return 'Слово не является палиндромом'
     }
 }
-let result = isPalindrom(str1)
+let result = isPalindrom(str)
 console.log(result)
