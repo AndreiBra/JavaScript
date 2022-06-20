@@ -58,7 +58,7 @@ const exponenta3 = function(p1, i) {
 }
    exponenta3(3, 5)
 
-// metod mach.pow
+// metod math.pow
 
 const exponenta4 = function(p_1, i) {
            console.log("Число " + p_1 + " в степени " + i + " равно " + Math.pow(p_1, i))
