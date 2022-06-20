@@ -138,24 +138,24 @@ printSmile(':)',6)
     // const valString = 'Case'
     const valString = 'Check-list'
 
-    function getWordStructure (wodr) {
+    function getWordStructure (word) {
         const count = {                     
             glasnye : 0,
-            soglasnie : 0
+            soglasnye : 0
         }
-        wodr = wodr.toLowerCase()           //для более простого сканирования, переводим все слово в нижний регистр
-        for (let i = 0; i < wodr.length; i++) {      // цикл перебирает строку по буквам
-            if(wodr[i].match(/[aeiouAEIOU]/)) {                  
+        word = word.toLowerCase()           //для более простого сканирования, переводим все слово в нижний регистр
+        for (let i = 0; i < word.length; i++) {      // цикл перебирает строку по буквам
+            if(word[i].match(/[aeiouAEIOU]/)) {                  
                 count.glasnye = count.glasnye + 1
-            } else if (wodr[i].match(/[bcdfghjklmnpqrtsvwxyzBCDFGHJKLMNPQRTSVWXYZ]/)) {
-                count.soglasnie = count.soglasnie + 1
+            } else if (word[i].match(/[bcdfghjklmnpqrtsvwxyzBCDFGHJKLMNPQRTSVWXYZ]/)) {
+                count.soglasnye = count.soglasnye + 1
             }
         }
         return count    //функция возвращает обьект
     }
     const count = getWordStructure(valString)  // результат функции присваиваем в объект
         
-    console.log('Слово ' + valString + ' состоит из ' + count.glasnye + ' гласных и ' + count.soglasnie + ' согласных букв')
+    console.log('Слово ' + valString + ' состоит из ' + count.glasnye + ' гласных и ' + count.soglasnye + ' согласных букв')
     
 
 
