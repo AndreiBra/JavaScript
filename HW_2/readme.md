@@ -27,4 +27,6 @@ e.g. function isPalindrom(word)
 
 Проверки: 'abba', 'Abba'
 
-Решение задач лежит [здесь](https://github.com/AndreiBra/JavaScript/blob/main/HW_2/task.js), или в формате видео можно посмотреть[здесь](https://youtu.be/g7MPoMq_1B0) 
+___
+
+## Решение задач лежит [здесь](https://github.com/AndreiBra/JavaScript/blob/main/HW_2/task.js), или в формате видео можно посмотреть[здесь](https://youtu.be/g7MPoMq_1B0) 
