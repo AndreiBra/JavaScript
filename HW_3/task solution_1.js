@@ -126,3 +126,11 @@ users.forEach(user => {
     if(user.registrationDate == '10.10.2021' || user.registrationDate == '09.10.2021') 
     console.log('Пользователь ' + user.firstName + ' ' + user.lastName + ' телефон ' + user.phone + ` зарегистрирован ${user.registrationDate}`)
 })
+
+// variant 6 цикл forEach через оператор If, с выводом данных пользователя 
+
+function Users(item, index) {
+    if (item["registrationDate"] == "09.10.2021" || item["registrationDate"] == "10.10.2021")
+        console.log(item["firstName"], item["lastName"], item["phone"], item["registrationDate"])
+}
+users.forEach(Users)
