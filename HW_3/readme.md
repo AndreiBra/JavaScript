@@ -27,7 +27,7 @@ Task 3**
 
 Примечание: ВСЕ задания выполнять не обязательно, если вам люто сложно. Но ПЕРВОЕ - прям надо всем:)
 
-### Решение задачи смотреть [здесь](https://github.com/AndreiBra/JavaScript/blob/main/HW_3/task_solution_3_stars.js)___
+### Решение задачи смотреть [здесь](https://github.com/AndreiBra/JavaScript/blob/main/HW_3/task_solution_3_stars.js)
 
 Task 4****
 
