@@ -20,6 +20,7 @@ ___
 
 Task 2*** Реализуйте считывание из JSONки из файла task2.json с помощью, например, модуля fs. для дальнейшего использования в функции, описанной в задании
 
+### Решение задачи смотреть [здесь](https://github.com/AndreiBra/JavaScript/blob/main/HW_3/task_solution_2_starS.js)
 ___
 
 Task 3**
